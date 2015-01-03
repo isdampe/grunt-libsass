@@ -36,6 +36,7 @@ module.exports = function(grunt) {
         return {
             file: file.src,
             outFile: file.dest,
+            outputStyle: file.__libsassOptions.outputStyle,
             includePaths: file.__libsassOptions.loadPath,
             sourceMap: file.__libsassOptions.sourcemap,
             success: makeSuccessFn(file, deferred),
